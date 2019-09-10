@@ -1,3 +1,5 @@
+import space from "../images/space.png";
+
 export const settings = {
   columnCreatorText: "Add new column",
   cardCreatorText: "Add new card",
@@ -18,7 +20,7 @@ export const pageContents = {
 export const listData = {
   title: "Things to do <sup>soon!</sup>",
   description: "Interesting things I want to check out!",
-  image: "http://uploads.kodilla.com/bootcamp/fer/11.react/space.png",
+  image: space,
   columns: [
     {
       key: 0,
