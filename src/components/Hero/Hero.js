@@ -1,16 +1,19 @@
 import React from "react";
 import styles from "./Hero.scss";
-import space from "./space.png";
+import PropTypes from "prop-types";
 
-console.log(space);
-
-const Hero = () => {
+const Hero = props => {
   return (
     <header className={styles.component}>
-      <h2 className={styles.title}>Things to do</h2>
-      <img className={styles.image} src={space} alt="space" />
+      <h2 className={styles.title}>{props.titleText}</h2>
+      <img className={styles.image} src={props.imageSrc} alt="space" />
     </header>
   );
+};
+
+Hero.propTypes = {
+  titleText: PropTypes.node.isRequired,
+  imageSrc: PropTypes.node.isRequired
 };
 
 export default Hero;
