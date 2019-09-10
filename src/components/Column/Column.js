@@ -1,20 +1,20 @@
-import React from "react";
-import styles from "./Column.scss";
-import PropTypes from "prop-types";
-import Card from "../Card/Card";
-import { settings } from "../../data/dataStore";
-import Creator from "../Creator/Creator";
-import Icon from "./Icon";
+import React from 'react';
+import styles from './Column.scss';
+import PropTypes from 'prop-types';
+import Card from '../Card/Card';
+import { settings } from '../../data/dataStore';
+import Creator from '../Creator/Creator';
+import Icon from './Icon';
 
 class Column extends React.Component {
   state = {
-    cards: this.props.cards || []
+    cards: this.props.cards || [],
   };
 
   static propTypes = {
     title: PropTypes.string.isRequired,
     icon: PropTypes.string.isRequired,
-    cards: PropTypes.array
+    cards: PropTypes.array,
   };
 
   addCard(title) {
@@ -26,9 +26,9 @@ class Column extends React.Component {
           key: state.cards.length
             ? state.cards[state.cards.length - 1].key + 1
             : 0,
-          title
-        }
-      ]
+          title,
+        },
+      ],
     }));
   }
 

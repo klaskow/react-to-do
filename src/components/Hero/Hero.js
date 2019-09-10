@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "./Hero.scss";
-import PropTypes from "prop-types";
-import ReactHtmlParser from "react-html-parser";
+import React from 'react';
+import styles from './Hero.scss';
+import PropTypes from 'prop-types';
+import ReactHtmlParser from 'react-html-parser';
 
 const Hero = props => {
   return (
@@ -14,7 +14,7 @@ const Hero = props => {
 
 Hero.propTypes = {
   titleText: PropTypes.node.isRequired,
-  imageSrc: PropTypes.node.isRequired
+  imageSrc: PropTypes.node.isRequired,
 };
 
 export default Hero;
