@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Card from '../Card/Card';
 import { settings } from '../../data/dataStore';
 import Creator from '../Creator/Creator';
-import Icon from './Icon';
+import Icon from '../Icon/Icon';
 
 class Column extends React.Component {
   static propTypes = {
