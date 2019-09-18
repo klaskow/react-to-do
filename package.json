@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --mode development --hot",
     "build": "webpack --mode production",
     "lint": "eslint --fix src/",
-    "web": "http-server dist"
+    "serve": "http-server dist"
   },
   "keywords": [],
   "author": "",
