@@ -3,6 +3,21 @@ export const getSearchString = ({ searchString }) => searchString;
 export const countAllCards = ({ cards }) => cards.length;
 export const countVisibleCards = ({ cards, searchString }) =>
   cards.filter(card => new RegExp(searchString, 'i').test(card.title)).length;
+export const getCardsForSearch = ({ cards, columns }, searchString) => {
+  const filteredCards = cards.filter(card =>
+    new RegExp(searchString, 'i').test(card.title),
+  );
+
+  return filteredCards.map(card => {
+    const listId = columns.filter(column => column.id === card.columnId)[0]
+      .listId;
+
+    return {
+      ...card,
+      listId,
+    };
+  });
+};
 
 // action name creator
 const reducerName = 'searchString';

@@ -4,6 +4,7 @@ import styles from './Header.scss';
 import Container from '../Container/Container';
 import Icon from '../Icon/Icon';
 import { settings } from '../../data/dataStore';
+import Search from '../Search/SearchContainer';
 
 export class Header extends Component {
   render() {
@@ -14,6 +15,7 @@ export class Header extends Component {
             <Link to="/" className={styles.logo}>
               <Icon name={settings.header.icon} />
             </Link>
+            <Search />
             <nav>
               <NavLink exact to="/" activeClassName="active">
                 Home
