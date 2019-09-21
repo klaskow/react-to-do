@@ -98,6 +98,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: spaceImage,
   },
+  {
+    id: 'list-2',
+    title: 'Second things to do <sup>later!</sup>',
+    description: 'Things when time comes!',
+    image: infoImage,
+  },
+  {
+    id: 'list-3',
+    title: 'Projects <sup>TO DO!</sup>',
+    description: 'Projects that increase your skills!',
+    image: faqImage,
+  },
 ];
 
 const columns = [
