@@ -1,7 +1,6 @@
 import spaceImage from '../images/space.png';
 import infoImage from '../images/info.jpg';
 import faqImage from '../images/faq.jpeg';
-console.log(';)');
 
 export const settings = {
   columnCreatorText: 'Add new column',
